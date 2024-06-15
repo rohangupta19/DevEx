@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>DZNR PROD'Z 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="code-box">
+            <div class="code-nav">
+                <a href="#ceb1">
+                    <div class="code-nav-tab">
+                        <div class="code-nav-tab-icon"></div>
+                        <div class="code-nav-tab-txt">index.html</div>
+                    </div>
+                </a>
+                <a href="#ceb2">
+                    <div class="code-nav-tab">
+                        <div class="code-nav-tab-icon"></div>
+                        <div class="code-nav-tab-txt">style.css</div>
+                    </div>
+                </a>
+                <a href="#ceb3">
+                    <div class="code-nav-tab">
+                        <div class="code-nav-tab-icon"></div>
+                        <div class="code-nav-tab-txt">script.js</div>
+                    </div>
+                </a>
+            
+            </div>
+            <div class="code-editor">
+                <div class="code-editor-box" id="ceb1">
+                    <textarea name="HTML" id="html-code" onkeyup="run()" placeholder="html"></textarea>
+                </div>
+                <div class="code-editor-box" id="ceb2">
+                    <textarea name="CSS" id="css-code" onkeyup="run()" placeholder="css"></textarea>
+                </div>
+                <div class="code-editor-box" id="ceb3">
+                    <textarea name="JS" id="js-code" onkeyup="run()" placeholder="js"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="output-box">
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

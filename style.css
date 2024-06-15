@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.code-box{
+    font-family: 'Roboto Mono', monospace;
+    width: 50%;
+    height: 100%;
+    background: #1f1f1f;
+}
+.code-nav{
+    width: 100%;
+    height: 7%;
+    background: #2f2f2f;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 12px;
+}
+.code-nav-tab{
+    height: 25px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: rgba(255,255,255,0.3);
+    color: #ffffff;
+    border-radius: 5px;
+}
+.code-nav-tab:nth-child(1){
+    margin-left: 10px;
+}
+.code-editor{
+    width: 100%;
+    height: 93%;
+    background: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.code-editor-box{
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    scroll-snap-align: center;
+}
+
+.code-editor-box textarea{
+    width: 100%;
+    height: 100%;
+    outline: 0px;
+    background: #1f1f1f;
+    color: #ffffff;
+    border: 0px;
+    padding-left: 15px;
+    padding-right: 7px;
+    padding-top: 10px;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+::-webkit-scrollbar-thumb{
+    width: 0px;
+    height: 0px;
+    border-radius: 10px;
+    background: transparent;
+}
+.output-box{
+    width: 50%;
+    height: 100%;
+    background: yellow;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    background: #ffff;
+    border: 0px;
+    outline: 0px;
+}
+@media only screen and (max-width:1000px){
+    .code-box{
+        width: 100%;
+        height: 50%;
+    }
+    .output-box{
+        width: 100%;
+        height: 50%;
+    }
+    .code-nav{
+        height: 12%;
+    }
+    .code-editor{
+        height: 87%;
+    }
+}
